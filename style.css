@@ -2,6 +2,10 @@
     body{
         display: grid;
     }
+    .side-header{
+        display: flex;
+        flex-direction: column;
+    }
 }
 *{  margin: auto;
     padding:auto;
@@ -30,6 +34,7 @@ header{
 @media screen and (max-width: 567px){
    nav ul {
     display: grid;
+    justify-content:flex-start;
 }
     }
 nav ul{
@@ -51,7 +56,7 @@ nav ul li a:hover{
 @media screen and (max-width: 567px) {
     .hero{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 .hero {
@@ -66,8 +71,7 @@ nav ul li a:hover{
     margin: 23px;
 }
 .hero> img{
-    width: 600px;
-    max-width: 100%;
+   width: 100%;
     height: auto;
 }
 button {
@@ -147,7 +151,7 @@ section span {
     .flex-icon{
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items:flex-start;}
  }
 .flex-icon {
     display: flex;
@@ -157,12 +161,20 @@ section span {
     background-color: rgb(195, 194, 194);
 }
 @media screen and (max-width:576px ){
-    .footer{
+    .container-footer{    
+    align-content: flex-start;
     display: flex;
     flex-direction: column;
     align-items: center;}
  }
 
+ .container-footer ul li{
+     display: block;
+ }
+ .container-footer{
+     align-content: flex-start;
+     display: inline-flex;
+ }
 small {
     display: block;
     text-align: center;
